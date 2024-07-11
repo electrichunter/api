@@ -1,0 +1,67 @@
+<section>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">Ömer Faruk Uysal</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+           <!-- <ul>
+                <li><a href="index.html"  class="active" style="--navAni:1">ANA MENÜ</a></li>
+                <li><a href="#" style="--navAni:2">HAKKIMDA</a></li>
+                <li><a href="#" style="--navAni:5">İLETİŞİM</a></li>
+            </ul>-->
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main">
+            <div class="detail">
+                <h3>Merhaba ben</h3>
+                <h1><span style="color:#52489C;">ÖMER FARUK </span> UYSAL</h1> <br> 
+                <p>Merhaba, Ben Ömer Faruk Uysal. Bilgisayar bilimi ve bilişim güvenliği alanında kendimi geliştirmekteyim.
+                     C#, SQL, CSS ve Python gibi dillerde yetkinim ve aktif olarak Linux kullanmaktayım. Ayrıca, ağ güvenliği,
+                      şifreleme ve erişim kontrolü gibi konularda deneyim sahibiyim.
+                     Medium'da yazdığım makaleleri okumak isterseniz, aşağıdaki linki kullanabilirsiniz.
+                </p>  <br><br>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/omer-farukuysal/" style="--socialAni:1"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/ouysal909/" style="--socialAni:2"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://github.com/electrichunter" style="--socialAni:3"><i class='bx bxl-github'></i></a>
+                    <a href="https://medium.com/@ouysal155" style="--socialAni:4"><i class='bx bxl-medium'></i></a>
+                </div>
+            </div>
+            <div class="images">
+                <img src="img.png" alt="" class="img-w">
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+    const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+    if (isDarkMode) {
+        body.classList.add('dark-mode');
+        darkModeToggle.checked = true;
+    }
+    darkModeToggle.addEventListener('change', () => {
+        if (darkModeToggle.checked) {
+            body.classList.add('dark-mode');
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            body.classList.remove('dark-mode');
+            localStorage.setItem('darkMode', 'disabled');
+        }
+    });
+</script>

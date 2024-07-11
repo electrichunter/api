@@ -1,0 +1,52 @@
+.haberler-div {
+  
+   display: flex; 
+    justify-content: flex-start; 
+    gap: 1%; 
+    flex-wrap: wrap; 
+    padding: 10px; 
+    justify-content: center;
+  }
+  
+  .haberler {
+    flex: 0 0 calc(25%-20px); 
+    margin: 1%; 
+    border: 1px solid #ddd; 
+    border-radius: 10%; 
+    overflow: hidden; /* Taşmayı gizleyin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+
+  .haberler img {
+    width: 100%; 
+    height: 300px; 
+    display: block; 
+  }
+
+  #buttonhaber{
+   
+    width: 100%;
+    height: 10vh; 
+    display: flex;
+    justify-content: center; /* Yatay ortala */
+    align-items: center; /* Dikey ortala */
+    
+  }
+
+
+ 
+.btn-custom {
+  background-color: #1E3A8A; /* Buton rengi */
+  color: white; /* Yazı rengi */
+  padding: 10px 20px; /* İç boşluklar */
+  border: none; /* Kenarlık yok */
+  border-radius: 5px; /* Kenarları yuvarlat */
+  font-family: 'Lato', sans-serif; /* Yazı tipi */
+  font-size: 16px; /* Yazı boyutu */
+  cursor: pointer; /* Fare imlecini pointer yapar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+}
+
+.btn-custom:hover {
+  background-color: #254EDB; /* Üzerine gelince buton rengi */
+}
